@@ -23,6 +23,9 @@ CREATE TABLE arbol (
     otros_datos TEXT
 );
 
+ALTER TABLE arbol
+ADD activo BOOL;
+
 -- Insertar 10 registros en la tabla "arbol"
 INSERT INTO arbol (ruta_imagen, nombre_comun, tipo_flor, dureza_madera, otros_datos)
 VALUES
