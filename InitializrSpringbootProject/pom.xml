@@ -8,11 +8,14 @@
         <version>3.1.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.tienda</groupId>
-    <artifactId>tienda</artifactId>
+    <groupId>com.Practica_grupal_1</groupId>
+    <artifactId>practica_grupal_1</artifactId>
     <version>1</version>
-    <name>tienda</name>
-    <description>Proyecto Tienda Lunes IIIC 2023</description>
+    <name>practica_grupal_1</name>
+    <description>Se crea el proyecto para la practica grupal 
+Daniel Forrester Mora
+Ricardo Artavia Solano
+Alexis Diaz Navarro</description>
     <properties>
         <java.version>19</java.version>
     </properties>
