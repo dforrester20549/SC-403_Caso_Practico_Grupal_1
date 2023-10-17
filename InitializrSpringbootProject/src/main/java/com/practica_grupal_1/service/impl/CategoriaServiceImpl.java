@@ -1,13 +1,28 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.practica_grupal_1.service.impl;
 
-/**
- *
- * @author Daniel
- */
-public class CategoriaServiceImpl {
+import com.practica_grupal_1.dao.CategoriaDao;
+import com.practica_grupal_1.domain.Categoria;
+import com.practica_grupal_1.service.CategoriaService;
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+
+@Service
+public class CategoriaServiceImpl implements CategoriaService {
     
+    //La anotacion autowired crea un unico objeto mientas se ejecuta la aplicacion//
+    
+    @Autowired
+    private CategoriaDao categoriaDao;
+    
+    @Override
+    public List<Categoria> getCategorias (boolean activos){
+        var Lista=categoriaDao.findAll();//encontrar todos los datos de la lista//
+        if (activos){
+            Lista.removeIf(e-> !e.isActivo());
+        }
+        
+        return Lista;
+    }
 }
