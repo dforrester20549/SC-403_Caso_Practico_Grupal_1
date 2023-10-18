@@ -1,2 +1,7 @@
-com\practica_grupal_1\PracticaApplication.class
+com\practica_grupal_1\service\CategoriaService.class
 com\practica_grupal_1\ProjectConfig.class
+com\practica_grupal_1\dao\CategoriaDao.class
+com\practica_grupal_1\domain\Categoria.class
+com\practica_grupal_1\service\impl\CategoriaServiceImpl.class
+com\practica_grupal_1\controller\CategoriaController.class
+com\practica_grupal_1\PracticaApplication.class
