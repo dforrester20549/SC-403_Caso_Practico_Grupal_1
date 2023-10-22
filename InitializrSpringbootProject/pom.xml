@@ -17,7 +17,7 @@ Daniel Forrester Mora
 Ricardo Artavia Solano
 Alexis Diaz Navarro</description>
     <properties>
-        <java.version>19</java.version>
+        <java.version>21</java.version>
     </properties>
     <dependencies>
         <dependency>
