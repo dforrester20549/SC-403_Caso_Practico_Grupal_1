@@ -3,13 +3,18 @@ package com.practica_grupal_1.service;
 import com.practica_grupal_1.domain.Categoria;
 import java.util.List;
 
-
 public interface CategoriaService {
     
-    //Se declara un metodo para obtener un ArrayListo de Objetos Categoria//
-    //Los objetos vienen de la tabla categoria, todos los registros//
+    // Se obtiene un listado de categorias en un List
+    public List<Categoria> getCategorias(boolean activos);
     
-    public List<Categoria> getCategorias (boolean activos);
+   // Se obtiene un Categoria, a partir del id de un categoria
+    public Categoria getCategoria(Categoria categoria);
     
-    //Abajo se colocara los metodos para realizar el CRUD de categorias//
+    // Se inserta un nuevo categoria si el id del categoria esta vacío
+    // Se actualiza un categoria si el id del categoria NO esta vacío
+    public void save(Categoria categoria);
+    
+    // Se elimina el categoria que tiene el id pasado por parámetro
+    public void delete(Categoria categoria);
 }
